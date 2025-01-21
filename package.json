@@ -1,6 +1,6 @@
 {
   "name": "@massif/sotw-data",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Player-facing COMP/CON data from 'Shadow of the Wolf', a campaign for the LANCER TTRPG",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/massif-press/sotw-data.git"
+    "url": "git+https://github.com/massif-press/sotw-data.git"
   },
   "directories": {
     "lib": "lib"
@@ -28,5 +28,16 @@
     "comp/con",
     "lancerrpg",
     "massif"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/massif-press/sotw-data/issues"
+  },
+  "homepage": "https://github.com/massif-press/sotw-data#readme",
+  "dependencies": {
+    "buffer-crc32": "^0.2.13",
+    "pend": "^1.2.0",
+    "fd-slicer": "^1.1.0",
+    "yauzl": "^2.10.0",
+    "yazl": "^2.5.1"
+  }
 }
