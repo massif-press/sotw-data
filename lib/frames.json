@@ -161,7 +161,7 @@
     },
     "traits": [
       {
-        "name": "Fusiller",
+        "name": "Fusilier",
         "description": "When you install a ranged weapon on the Tagetes (or during a Full Repair), you may change its weapon type to Rifle. Weapons with their type changed in this way gain Overkill."
       },
       {
