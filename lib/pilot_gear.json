@@ -59,7 +59,7 @@
     ],
     "damage": [
       {
-        "type": "kinetic",
+        "type": "Kinetic",
         "val": 2
       }
     ]
@@ -91,7 +91,7 @@
     ],
     "damage": [
       {
-        "type": "burn",
+        "type": "Burn",
         "val": 1
       }
     ]

@@ -34,7 +34,7 @@
             "detail": "You may hover when you move. As long as you are only carrying objects or allied characters, you may ignore restrictions on carrying caused by flight.<br><br>At the end of any of your turns in which you uses this trait, you take heat equal to 1 + the total Size of objects and characters you are carrying.",
             "damage": [
               {
-                "type": "heat",
+                "type": "Heat",
                 "val": 1
               }
             ]
@@ -158,7 +158,7 @@
           "detail": "Each hostile character in one or more areas created by your Drones takes 4 burn. This action is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this action was used.",
           "damage": [
             {
-              "type": "burn",
+              "type": "Burn",
               "val": 4,
               "aoe": true
             }
@@ -178,7 +178,7 @@
           "redeploy": "Quick",
           "damage": [
             {
-              "type": "burn",
+              "type": "Burn",
               "val": 2,
               "aoe": true
             }
