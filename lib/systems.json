@@ -5,14 +5,7 @@
     "sp": 1,
     "source": "EXOTIC",
     "effect": "At the start of your turn, gain 1 Overshield.",
-    "active_effects": [
-      {
-        "name": "Champion's Favor",
-        "detail": "At the start of your turn, gain 1 Overshield."
-      }
-    ],
     "description": "These mech-scale golden laurels granted to pankration mechani champions house a small but sophisticated shield generator. The shield provides both protection and a distinctively colored visual shimmer, referred to as a champion's “aura” or “halo”.",
-<<<<<<< HEAD
     "active_effects": [
       {
         "name": "Champion's Favor",
@@ -21,8 +14,6 @@
         "add_other": { "type": "overshield", "val": 1 }
       }
     ],
-=======
->>>>>>> update
     "license_id": "",
     "tags": [
       {
