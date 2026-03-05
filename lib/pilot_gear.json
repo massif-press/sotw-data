@@ -3,9 +3,15 @@
     "id": "pg_personal_shielding",
     "name": "Personal Kinetic Shielding",
     "type": "Armor",
-	"effect": "While this armor is active, you cannot make ranged attacks. When you are hit by a ranged weapon, reduce the damage by 1d6. If the damage is not reduced to zero, the shield burns out and is unusable until the next Rest or Full Repair.",
+    "effect": "While this armor is active, you cannot make ranged attacks. When you are hit by a ranged weapon, reduce the damage by 1d6. If the damage is not reduced to zero, the shield burns out and is unusable until the next Rest or Full Repair.",
+    "active_effects": [
+      {
+        "name": "Personal Kinetic Shielding",
+        "detail": "While active, you cannot make ranged attacks. When hit by a ranged weapon, reduce the damage by 1d6. If damage is not reduced to zero, the shield burns out and is unusable until the next Rest or Full Repair."
+      }
+    ],
     "description": "Kinetic shields are a common choice for personal defense among Karrakin nobles. Despite lacking features considered vital by most pilots, such as strength-augmentation, mech interface components, and protection against environmental hazards, shields have a few notable advantages over hardsuits. Most importantly, their generator packs are compact and easily concealed, enabling discreet use and providing protection with minimal impact on the user’s fashion choices.",
-	"bonuses": [
+    "bonuses": [
       {
         "id": "pilot_hp",
         "val": 0
@@ -26,8 +32,8 @@
         "replace": true
       }
     ],
-	"tags": [
-	  {
+    "tags": [
+      {
         "id": "tg_shield"
       }
     ]
@@ -41,13 +47,13 @@
       {
         "id": "tg_pilot_weapon"
       },
-	  {
+      {
         "id": "tg_ap"
       },
-	  {
+      {
         "id": "tg_unique"
       },
-	  {
+      {
         "id": "tg_exotic"
       }
     ],
@@ -59,7 +65,7 @@
     ],
     "damage": [
       {
-        "type": "kinetic",
+        "type": "Kinetic",
         "val": 2
       }
     ]
@@ -68,18 +74,18 @@
     "id": "pg_hardlight_knives",
     "name": "The Wolf's Blades",
     "type": "Weapon",
-	"description": "These strangely weighted hardlight knives were stolen from a feared pirate. Without proper training, they are as dangerous to their user as to their target.",
+    "description": "These strangely weighted hardlight knives were stolen from a feared pirate. Without proper training, they are as dangerous to their user as to their target.",
     "tags": [
       {
         "id": "tg_pilot_weapon"
       },
-	  {
+      {
         "id": "tg_sidearm"
       },
-	  {
+      {
         "id": "tg_unique"
       },
-	  {
+      {
         "id": "tg_exotic"
       }
     ],
@@ -91,7 +97,7 @@
     ],
     "damage": [
       {
-        "type": "burn",
+        "type": "Burn",
         "val": 1
       }
     ]
@@ -113,14 +119,14 @@
       {
         "id": "tg_gear"
       },
-	  {
+      {
         "id": "tg_limited",
         "val": 1
       },
-	  {
+      {
         "id": "tg_unique"
       },
-	  {
+      {
         "id": "tg_exotic"
       }
     ]

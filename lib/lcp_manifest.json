@@ -5,5 +5,13 @@
   "item_prefix": "sotw",
   "version": "1.0.2",
   "image_url": "https://img.itch.zone/aW1hZ2UvMzI0MjcwMC8xOTM2NTE1Mi5qcGc=/347x500/yHrfOJ.jpg",
-  "website": "https://massif-press.itch.io/shadow-of-the-wolf"
+  "website": "https://massif-press.itch.io/shadow-of-the-wolf",
+  "version_history": [
+    {
+      "version": "2.0.0",
+      "date": "2026-03-04",
+      "changes": ["Updated to v3."]
+    }
+  ],
+  "v3": true
 }
