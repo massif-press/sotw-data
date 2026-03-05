@@ -1,6 +1,7 @@
 [
   {
     "id": "mf_lancaster_alt_taraxacum",
+    "license_id": "mf_lancaster",
     "source": "IPS-N",
     "license_level": 2,
     "name": "Taraxacum",
@@ -27,6 +28,7 @@
     "traits": [
       {
         "name": "ROC Superlifter Flight System",
+<<<<<<< HEAD
         "description": "The Taraxacum may hover when it moves. As long as it is only carrying objects or allied characters, the Taraxacum may ignore restrictions on carrying caused by flight.<br><br>At the end of any of the Taraxacum’s turns in which it uses this trait, it takes heat equal to 1 + the total Size of objects and characters it is carrying.",
         "active_effects": [
           {
@@ -38,11 +40,19 @@
                 "val": 1
               }
             ]
+=======
+        "description": "The Taraxacum may hover when it moves. As long as it is only carrying objects or allied characters, the Taraxacum may ignore restrictions on carrying caused by flight.<br><br>At the end of any of the Taraxacum's turns in which it uses this trait, it takes heat equal to 1 + the total Size of objects and characters it is carrying.",
+        "active_effects": [
+          {
+            "name": "ROC Superlifter Flight System",
+            "detail": "You may hover when you move. While only carrying objects or allied characters, ignore restrictions on carrying caused by flight. At the end of any turn in which you use this trait, take heat equal to 1 + the total Size of objects and characters you are carrying."
+>>>>>>> update
           }
         ]
       },
       {
         "name": "Relay Coupling",
+<<<<<<< HEAD
         "description": "When the Taraxacum targets an allied character within sensors with a system or tech action, they may use the Taraxacum’s Sensors and line of sight for tech actions until the start of its next turn.",
         "active_effects": [
           {
@@ -56,6 +66,13 @@
                 "duration": "next_turn_start_target"
               }
             ]
+=======
+        "description": "When the Taraxacum targets an allied character within sensors with a system or tech action, they may use the Taraxacum's Sensors and line of sight for tech actions until the start of its next turn.",
+        "active_effects": [
+          {
+            "name": "Relay Coupling",
+            "detail": "When you target an allied character within Sensors with a system or tech action, they may use your Sensors and line of sight for tech actions until the start of your next turn."
+>>>>>>> update
           }
         ]
       }
@@ -77,10 +94,22 @@
         }
       ],
       "activation": "Quick",
+      "active_actions": [
+        {
+          "name": "Omnispectrum Sensor Burst",
+          "activation": "Quick",
+          "detail": "Scan all hostile characters within and below a Burst 4 area. You may apply Lock On to any characters scanned this way. This action is Efficient and will refund 1 Core Point at the end of any scene in which this action was used.",
+          "add_status": [{ "id": "lockon" }]
+        }
+      ],
       "description": "<p>Initial Taraxacum design drafts called for a highly sensitive, custom-printed sensor suite. Unfortunately, a litany of design flaws forced engineers on Crossland to fit the first prototypes with existing sensor modules meant for high-altitude survey drones.</p><p>Test pilots immediately took a shine to the replacement sensors despite their significant power draw, referring to them as “God’s eyes”. Their ability to resolve terrain through even the thickest vegetation massively simplified wilderness navigation and landing, while tuning them to pick up specific emission bands conferred an obvious combat advantage in high-density environments.</p>",
       "passive_name": "Precision Fix",
       "passive_effect": "When you Scan a character, it cannot benefit from cover or being Invisible until the end of your next turn.",
+<<<<<<< HEAD
       "passive_active_effects": [
+=======
+      "passive_effects": [
+>>>>>>> update
         {
           "name": "Precision Fix",
           "detail": "When you Scan a character, it cannot benefit from cover or being Invisible until the end of your next turn."
@@ -92,6 +121,7 @@
   },
   {
     "id": "mf_balor_alt_hecatoncheires",
+    "license_id": "mf_balor",
     "source": "HORUS",
     "license_level": 2,
     "name": "Hecatoncheires",
@@ -142,7 +172,11 @@
         "active_effects": [
           {
             "name": "Panoptes Targeting",
+<<<<<<< HEAD
             "detail": "Your Smart weapons ignore the Invisible status of characters within sensors."
+=======
+            "detail": "Your Smart weapons ignore the Invisible status of characters within Sensors."
+>>>>>>> update
           }
         ]
       }
@@ -166,8 +200,18 @@
         }
       ],
       "passive_name": "Razor Hive",
+<<<<<<< HEAD
       "passive_bonuses": [],
       "passive_synergies": [],
+=======
+      "passive_actions": [
+        {
+          "name": "Deploy Razor Swarm",
+          "activation": "Quick",
+          "detail": "Deploy a Razor Swarm to a valid Blast 1 area within Sensors that contains no hostile characters. The Hecatoncheires may only have a single Razor Swarm deployed at any one time. The Razor Swarm persists until the end of the scene or until recalled or redeployed as a quick action."
+        }
+      ],
+>>>>>>> update
       "deployables": [
         {
           "name": "Razor Swarm",
@@ -191,6 +235,7 @@
   },
   {
     "id": "mf_sherman_alt_tagetes",
+    "license_id": "mf_sherman",
     "source": "HA",
     "license_level": 2,
     "name": "Tagetes",
@@ -216,8 +261,21 @@
     },
     "traits": [
       {
-        "name": "Fusiller",
-        "description": "When you install a ranged weapon on the Tagetes (or during a Full Repair), you may change its weapon type to Rifle. Weapons with their type changed in this way gain Overkill."
+        "name": "Fusilier",
+        "description": "When you install a ranged weapon on the Tagetes (or during a Full Repair), you may change its weapon type to Rifle. Weapons with their type changed in this way gain Overkill.",
+        "active_effects": [
+          {
+            "name": "Fusilier",
+            "detail": "When you install a ranged weapon on the Tagetes (or during a Full Repair), you may change its weapon type to Rifle. Weapons with their type changed in this way gain Overkill."
+          }
+        ],
+        "synergies": [
+          {
+            "locations": ["weapon"],
+            "weapon_types": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
+            "detail": "You may change this weapon's type to Rifle. If you do, it gains Overkill."
+          }
+        ]
       },
       {
         "name": "Rank Discipline",
@@ -225,17 +283,31 @@
         "active_effects": [
           {
             "name": "Rank Discipline",
+<<<<<<< HEAD
             "detail": "While adjacent to an allied mech, you gain +1 Accuracy on all skill checks and saves."
+=======
+            "detail": "While adjacent to an allied mech, you gain +1 Accuracy on all skill checks and saves.",
+            "condition": "Adjacent to an allied mech"
+>>>>>>> update
           }
         ]
       },
       {
         "name": "Eterane Construction",
+<<<<<<< HEAD
         "description": "When you Stabilize, you may choose one of the following in addition to other options:<ul><li>Reload all loading weapons</li><li>Clear any burn currently affecting your mech</li><li>Clear a condition that wasn’t caused by one of your own systems, talents, etc.</li><li>Clear an adjacent allied character’s condition that wasn’t caused by one of their own systems, talents, etc.</li></ul>",
         "active_effects": [
           {
             "name": "Eterane Construction",
             "detail": "When you Stabilize, you may choose one of the following in addition to other options:<ul><li>Reload all loading weapons</li><li>Clear any burn currently affecting your mech</li><li>Clear a condition that wasn’t caused by one of your own systems, talents, etc.</li><li>Clear an adjacent allied character’s condition that wasn’t caused by one of their own systems, talents, etc.</li></ul>"
+=======
+        "description": "When you Stabilize, you may choose one of the following in addition to other options:<ul><li>Reload all loading weapons</li><li>Clear any burn currently affecting your mech</li><li>Clear a condition that wasn't caused by one of your own systems, talents, etc.</li><li>Clear an adjacent allied character's condition that wasn't caused by one of their own systems, talents, etc.</li></ul>",
+        "actions": [
+          {
+            "name": "Eterane Construction",
+            "activation": "Other",
+            "detail": "When you Stabilize, you may choose one of the following in addition to other options: Reload all loading weapons; Clear any burn currently affecting your mech; Clear a condition that wasn't caused by one of your own systems, talents, etc.; Clear an adjacent allied character's condition that wasn't caused by one of their own systems, talents, etc."
+>>>>>>> update
           }
         ]
       }
@@ -244,20 +316,42 @@
       "name": "Chorak Skirmish Gear",
       "active_name": "SANDSTORM Heat Dispersal System",
       "active_effect": "When you stabilize, you may activate this system to create a stationary burst 2 zone of soft cover that lasts until the end of your next turn. While benefiting from this soft cover, you and allied characters may clear 1d3+1 heat as a protocol. This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used.",
+<<<<<<< HEAD
       "active_effects": [
         {
           "name": "SANDSTORM Heat Dispersal System",
           "detail": "When you stabilize, you may activate this system to create a stationary burst 2 zone of soft cover that lasts until the end of your next turn. While benefiting from this soft cover, you and allied characters may clear 1d3+1 heat as a protocol. This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used."
+=======
+      "active_actions": [
+        {
+          "name": "SANDSTORM Heat Dispersal System",
+          "activation": "Other",
+          "detail": "When you Stabilize, activate this system to create a stationary Burst 2 zone of soft cover that lasts until the end of your next turn. While benefiting from this soft cover, you and allied characters may clear 1d3+1 heat as a protocol. This ability is Efficient and will refund 1 Core Point at the end of any scene in which this ability was used."
+>>>>>>> update
         }
       ],
       "description": "Tilimsan is a harsh proving ground for any mech. Baking heat, scouring sand, dry lightning, and treacherous terrain are challenge enough for designers, but Company Tempeste’s technical requirements are just as uncompromising as the landscape. Popular rumor has it that one headstrong Ispahsalari artisan who refused to integrate the company’s aftermarket modifications on aesthetic grounds simply never returned from the desert.",
       "passive_name": "Tempeste Synchronized Long Scope",
       "passive_effect": "You can attack with Rifles as though they had +5 range, as long as Lock On is consumed during the attack.",
+<<<<<<< HEAD
       "passive_active_effects": [
+=======
+      "passive_effects": [
+>>>>>>> update
         {
           "name": "Tempeste Synchronized Long Scope",
           "detail": "You can attack with Rifles as though they had +5 range, as long as Lock On is consumed during the attack."
         }
+<<<<<<< HEAD
+=======
+      ],
+      "synergies": [
+        {
+          "locations": ["weapon"],
+          "weapon_types": ["Rifle"],
+          "detail": "You can attack with this weapon as though it had +5 range, as long as Lock On is consumed during the attack."
+        }
+>>>>>>> update
       ]
     },
     "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/tagetes.png",
