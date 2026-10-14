@@ -20,7 +20,7 @@
     {
       "version": "2.0.2",
       "date": "2026-10-14",
-      "changes": ["Fixed Psionic Piston markup"]
+      "changes": ["Fixed item data markup"]
     }
   ],
   "v3": true
